@@ -1,0 +1,288 @@
+:root {
+    --primaryColor: #BCFAFF;
+    --primary2Color: #25C6D3;
+    --secondaryColor: white;
+    --textColor: #757575;
+    --borderColor: #DADADA;
+    --red: #EE8982;
+    --green: #63B925;
+}
+
+.centerScreen {
+    display: flex;
+    justify-content: center;
+}
+
+.s1 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    height: 100px;
+}
+
+.s2 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primaryColor);
+    border-radius: 12px;
+}
+
+h1, h2, h3, p, label, input, button {
+    font-family: 'Varela', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-top: 30px;;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 0;
+    color: var(--textColor);
+    width: 200px;
+}
+
+label {
+    color: var(--textColor);
+    font-size: 24px;
+}
+
+button, input {
+    font-size: 18px;
+}
+
+input {
+    border: solid 1px var(--borderColor);
+    border-radius: 6px;
+    height: 35px;
+    padding-left: 12px;
+}
+
+input:focus {
+    outline: none;
+    border: solid 1px var(--textColor);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--borderColor);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--borderColor);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--borderColor);
+  }
+
+.header-container {
+    width: 800px;
+    background-color: white;
+    border: hidden;
+    border-radius: 12px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    background-color: white;
+    border: hidden;
+    border-radius: 12px;
+    margin: 25px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 75px;
+    background-color: var(--primaryColor);
+    border-radius: 6px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.form {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.courseInfo, .contactInfo {
+    width: 300px;
+}
+
+.formSect {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.formBTN {
+    border: solid 2px var(--borderColor);
+    border-radius: 6px;
+    color: var(--borderColor);
+    background-color: transparent;
+    width: 40px;
+    height: 35px;
+}
+
+.formBTN:hover, .formBTN.active:hover {
+    border: solid 2px var(--primary2Color);
+    background-color: var(--primaryColor);
+    color: black;
+} 
+
+.formBTN.active {
+    border: solid 2px var(--primaryColor);
+    background-color: var(--primaryColor);
+    color: black;
+}
+
+#yearInput, #cnumInput {
+    width: 55px;
+}
+
+#deptInput {
+    width: 80px;
+}
+
+#sectInput {
+    width: 45px;
+}
+
+.submit {
+    border: solid 2px var(--borderColor);
+    border-radius: 6px;
+    color: var(--textColor);
+    background-color: transparent;
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.submit:hover, .submit.active:hover {
+    border: solid 2px var(--primary2Color);
+    background-color: var(--primaryColor);
+    color: black;
+} 
+
+.submit.active {
+    border: solid 2px var(--primaryColor);
+    background-color: var(--primaryColor);
+    color: black;
+}
+
+
+.djform {
+    display: none;
+}
+
+.result {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+#success {
+    color: var(--green);
+    margin-bottom: 50px;
+}
+
+#error {
+    color: var(--red);
+    margin-bottom: 50px;
+}
+
+.required {
+    color: var(--red);
+}
+
+
+@media only screen and (max-width: 800px) {
+    h2 {
+        font-size: 36px;
+        margin-bottom: 0;
+        margin-top: 0px;;
+    }
+    .s1 {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondaryColor);
+        height: 100px;
+    }
+    .s2 {
+        display: flex;
+        justify-content: center;
+        background-color: var(--primaryColor);
+        border-radius: 12px;
+        width: 350px;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 340px;
+        background-color: white;
+        border: hidden;
+        border-radius: 12px;
+        margin: 10px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .centerScreen {
+        margin: 0 auto;
+    }
+    .submit {
+        border: solid 2px var(--borderColor);
+        border-radius: 6px;
+        color: var(--textColor);
+        background-color: transparent;
+        width: 300px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .header-container {
+        margin: 0 auto;
+        background-color: white;
+        border: hidden;
+        border-radius: 12px;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        height: 75px;
+        background-color: var(--primaryColor);
+        border-radius: 6px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

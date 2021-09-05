@@ -1,0 +1,7 @@
+app/__pycache__/
+app/migrations/__pycache__/
+app/controller/__pycache__/
+UBC_Course_Notifier/__pycache__/
+db.sqlite3
+requirements.txt
+data
