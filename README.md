@@ -1,4 +1,4 @@
-# LetMeIn UBC(http://52.139.4.141/)
+# LetMeIn UBC 
 A full stack web app that tracks UBC courses and notifies you when a seat is available!
 Developed in Python 3, JS6 and HTML/CSS.
 
@@ -9,6 +9,3 @@ Developed in Python 3, JS6 and HTML/CSS.
 - Docker
 - Twilio API
 - Beautiful Soup
-
-## About
-LetMeIn UBC is a full stack web application that 
